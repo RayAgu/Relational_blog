@@ -8,8 +8,8 @@ const Route = require("./routers/commentRoute")
 
 const app = express();
 app.use(express.json());
-app.use('api', Router);
-app.use('api', Route)
+app.use('/api', Router);
+app.use('/api', Route)
 
 
 const DB = process.env.DATABASE
